@@ -626,6 +626,10 @@ h5,
   color: #71bc42;
 }
 
+.ul-check.warning li:before {
+  color: #ffc107;
+}
+
 .ul-check.primary li:before {
   color: #fd4d40;
 }
@@ -2688,6 +2692,10 @@ h5,
 
 .pricing.teal .price {
   background: #16c3b0;
+}
+
+.pricing.warning .price {
+  background: #ffc107;
 }
 
 .pricing.danger .price {

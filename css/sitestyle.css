@@ -48,6 +48,10 @@
   transition: .3s all ease-in-out;
 }
 
+.homeindex{
+  padding: 10% 0;
+}
+
 .list-unstyled a span.icon {
   margin-right: 20px;
 }
@@ -69,6 +73,12 @@
   margin-right: 10px;
 }
 
+#home-showcase .owl-dots{
+  position: absolute;
+    bottom: 10px;
+    left: 47%;
+}
+
 .home-section {
   height: 100vh;
   background-color: #000;
@@ -78,13 +88,25 @@
 
 .home-section:before {
   content: '';
-  background: url("../images/kids_4.jpg") no-repeat top center/cover;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.5;
+  opacity: 0.4;
+}
+
+.home-section1:before{
+  background: url("../images/kids_1.jpg") no-repeat top center/cover;
+}
+.home-section2:before{
+  background: url("../images/kids_2.jpg") no-repeat top center/cover;
+}
+.home-section3:before{
+  background: url("../images/kids_3.jpg") no-repeat top center/cover;
+}
+.home-section4:before{
+  background: url("../images/kids_4.jpg") no-repeat top center/cover;
 }
 
 .home-section .container {

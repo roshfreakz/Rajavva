@@ -663,21 +663,20 @@ h5,
 }
 
 /* Navbar */
-.site-navbar {
+/* .site-navbar {
   margin-bottom: 0px;
   z-index: 99;
   position: absolute;
   top: 0;
   width: 100%;
-  padding: 1rem;
-}
+} */
 
-@media (max-width: 991.98px) {
+/* @media (max-width: 991.98px) {
   .site-navbar {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
-}
+} */
 
 .site-navbar .toggle-button {
   position: absolute;
@@ -880,7 +879,7 @@ h5,
 }
 
 .site-mobile-menu {
-  width: 300px;
+  width: auto;
   position: fixed;
   right: 0;
   z-index: 2000;

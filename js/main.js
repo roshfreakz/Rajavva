@@ -25,8 +25,10 @@ jQuery(document).ready(function ($) {
 
 		if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
 			mybutton.style.display = "flex";
+			// $('#site-navbar').addClass('site-navbar-fixed');
 		} else {
 			mybutton.style.display = "none";
+			// $('#site-navbar').removeClass('site-navbar-fixed');
 		}
 	}
 

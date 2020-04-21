@@ -4,10 +4,10 @@
 }
 
 .site-logo-img {
-  width: 150px;
+  width: 130px;
   position: absolute;
   top: 5px;
-  left: 10px;
+  left: 0;
 }
 
 .top-social a:hover .icon-facebook {
@@ -80,7 +80,7 @@
 }
 
 .home-section {
-  height: 100vh;
+  height: 85vh;
   background-color: #000;
   position: relative;
 }
@@ -135,11 +135,11 @@
   transform: scale(1.5);
 }
 
-.gallery-section .tab-content{
+/* .gallery-section .tab-content{
  max-height: 600px;
  overflow-y: auto;
  overflow-x: hidden;
-}
+} */
 
 /* .gallery .card {
   min-height: 250px;
@@ -154,8 +154,22 @@
   align-items: flex-end;
 }
 
+.menu-bar{
+  margin-left:130px;
+  width: auto;
+}
 
+.site-navbar { 
+ 
+  padding-bottom: 1rem; 
+  background-color: #17a2b8;
+}
 
+.site-navbar-fixed{
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
 
 .enquirebutton{
   text-align: right;
@@ -168,11 +182,16 @@
   .site-logo-container{
     margin-top:100px;
   }
+  .site-navbar{
+    padding-top: 1rem;
+  }
   .site-navbar .site-logo a{
     font-size: 27px;
   }
-  .home-section .container h1{
+  .home-section .container{
     margin-top: 50px;
+  }
+  .home-section .container h1{
     font-size: 30px;
   }
   .btn{
@@ -197,11 +216,14 @@
     flex-direction: column;
     align-items: center;
   }
-  .site-footer .footer-heading{
-    text-align: center;
+  .home-section {
+    height: 65vh;
   }
   .inner-section{
     padding: 8rem 0;
+  }
+  .menu-bar{
+    margin-left:0px;
   }
 }
 

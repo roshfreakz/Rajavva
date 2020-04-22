@@ -623,7 +623,7 @@ h5,
 }
 
 .ul-check.success li:before {
-  color: #71bc42;
+  color: #98ff57;
 }
 
 .ul-check.warning li:before {
@@ -2691,6 +2691,10 @@ h5,
 
 .pricing.teal .price {
   background: #16c3b0;
+}
+
+.pricing.success .price {
+  background: #71bc42;
 }
 
 .pricing.warning .price {

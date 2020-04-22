@@ -1,3 +1,7 @@
+body{
+background-color: #f6f5f5;
+}
+
 .site-sublogo {
   font-size: 1rem;
   margin-bottom: 0;
@@ -61,9 +65,9 @@
   transition: .3s all ease-in-out;
 }
 
-.homeindex{
+/* .homeindex{
   padding: 10% 0;
-}
+} */
 
 .list-unstyled a span.icon {
   margin-right: 20px;

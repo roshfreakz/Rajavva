@@ -3,13 +3,26 @@
   margin-bottom: 0;
 }
 
+.site-navbar .site-logo a{
+  color: red;
+}
+
 .site-logo-img {
   width: 130px;
   position: absolute;
   top: 5px;
   left: 0;
 }
+.site-info{
+  color: #333;
+}
+.menu-wrap{
+  background-color:#333;
+}
 
+.site-navbar .site-navigation .site-menu>li>a{
+  color:#fff;
+}
 .top-social a:hover .icon-facebook {
   color: #0053e2;
 }
@@ -103,7 +116,7 @@
   background: url("../images/kids_2.jpg") no-repeat top center/cover;
 }
 .home-section3:before{
-  background: url("../images/kids_3.jpg") no-repeat top center/cover;
+  background: url("../images/kids_33.jpg") no-repeat top center/cover;
 }
 .home-section4:before{
   background: url("../images/kids_4.jpg") no-repeat top center/cover;
@@ -160,9 +173,8 @@
 }
 
 .site-navbar { 
- 
   padding-bottom: 1rem; 
-  background-color: #17a2b8;
+  background-color: #fff;
 }
 
 .site-navbar-fixed{

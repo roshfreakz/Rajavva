@@ -1,5 +1,5 @@
-body{
-background-color: #f6f5f5;
+body {
+  background-color: #f6f5f5;
 }
 
 .site-sublogo {
@@ -7,7 +7,7 @@ background-color: #f6f5f5;
   margin-bottom: 0;
 }
 
-.site-navbar .site-logo a{
+.site-navbar .site-logo a {
   color: red;
 }
 
@@ -17,16 +17,19 @@ background-color: #f6f5f5;
   top: 5px;
   left: 0;
 }
-.site-info{
+
+.site-info {
   color: #333;
 }
-.menu-wrap{
-  background-color:#333;
+
+.menu-wrap {
+  background-color: #333;
 }
 
-.site-navbar .site-navigation .site-menu>li>a{
-  color:#fff;
+.site-navbar .site-navigation .site-menu>li>a {
+  color: #fff;
 }
+
 .top-social a:hover .icon-facebook {
   color: #0053e2;
 }
@@ -90,10 +93,10 @@ background-color: #f6f5f5;
   margin-right: 10px;
 }
 
-#home-showcase .owl-dots{
+#home-showcase .owl-dots {
   position: absolute;
-    bottom: 10px;
-    left: 47%;
+  bottom: 10px;
+  left: 47%;
 }
 
 .home-section {
@@ -113,16 +116,19 @@ background-color: #f6f5f5;
   opacity: 0.4;
 }
 
-.home-section1:before{
+.home-section1:before {
   background: url("../images/kids_1.jpg") no-repeat top center/cover;
 }
-.home-section2:before{
+
+.home-section2:before {
   background: url("../images/kids_2.jpg") no-repeat top center/cover;
 }
-.home-section3:before{
+
+.home-section3:before {
   background: url("../images/kids_33.jpg") no-repeat top center/cover;
 }
-.home-section4:before{
+
+.home-section4:before {
   background: url("../images/kids_4.jpg") no-repeat top center/cover;
 }
 
@@ -162,93 +168,182 @@ background-color: #f6f5f5;
   min-height: 250px;
 } */
 
-.img-nonhover{
+
+
+.print-logo {
+  width: 200px;
+}
+
+.admission-section .card-body.card-photo-block {
+  /* margin-left: 250px; */
+  height: 250px;
+}
+
+.admission-section .card-body {
+  border: 3px solid black;
+  margin: 15px;
+}
+
+.admission-section h5{
+  margin: 30px 0;
+  color: #000;
+}
+
+
+.img-nonhover {
   width: 100%;
 }
+
 .gallery .card-body {
   padding: 0.5rem;
   display: flex;
   align-items: flex-end;
 }
 
-.menu-bar{
-  margin-left:130px;
+.menu-bar {
+  margin-left: 130px;
   width: auto;
 }
 
-.site-navbar { 
-  padding-bottom: 1rem; 
+.site-navbar {
+  padding-bottom: 1rem;
   background-color: #fff;
 }
 
-.site-navbar-fixed{
+.site-navbar-fixed {
   position: fixed;
   width: 100%;
   z-index: 99;
 }
 
-.enquirebutton{
+.enquirebutton {
   text-align: right;
 }
 
-.about-content h3{
+.about-content h3 {
   padding-top: 30px;
   text-align: center;
 }
 
-.about-content p{
+.about-content p {
   text-align: justify;
+}
+
+label {
+  margin-bottom: 0;
+}
+
+.row.form-group {
+  padding: 0 1rem;
+  line-height: 1.2;
+}
+
+form.admission-section .row .col-12 {
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+form.admission-section .row .col-12.inner-form {
+  padding-left: 10px;
+}
+
+.custom-control-label {
+  line-height: 2.5;
+  padding-left: 30px;
+}
+
+.custom-control-label:after,
+.custom-control-label:before {
+  width: 2rem;
+  height: 2rem;
 }
 
 @media (max-width: 991.98px) {
   .img-logo img {
-    left:30%;
+    left: 30%;
   }
-  .site-logo-container{
-    margin-top:100px;
+
+  .site-logo-container {
+    margin-top: 100px;
   }
-  .site-navbar{
+
+  .site-navbar {
     padding-top: 1rem;
   }
-  .site-navbar .site-logo a{
+
+  .site-navbar .site-logo a {
     font-size: 27px;
   }
-  .home-section .container{
+
+  .home-section .container {
     margin-top: 50px;
   }
-  .home-section .container h1{
+
+  .home-section .container h1 {
     font-size: 30px;
   }
-  .btn{
+
+  .btn {
     padding: 10px;
   }
-  .h3{
+
+  .h3 {
     font-size: 1.3rem;
   }
-  #home-showcase .owl-dots{
-    left:40%;
+
+  #home-showcase .owl-dots {
+    left: 40%;
   }
-  .enquirebutton,.enquiretext{
+
+  .enquirebutton,
+  .enquiretext {
     text-align: center;
   }
-  .enquiretext h2{
+
+  .enquiretext h2 {
     font-size: 1.5rem;
   }
-  #aboutus p.btncol{
+
+  #aboutus p.btncol {
     text-align: center;
   }
-  .testimonial-3{
+
+  .testimonial-3 {
     flex-direction: column;
     align-items: center;
   }
+
   .home-section {
     height: 65vh;
   }
-  .inner-section{
+
+  .inner-section {
     padding: 8rem 0;
   }
-  .menu-bar{
-    margin-left:0px;
+
+  .menu-bar {
+    margin-left: 0px;
+  }
+
+  form.admission-section .row .col-12.inner-form {
+    padding-left: 0;
+    padding-top: 10px;
+  }
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #admission-section * {
+    -webkit-print-color-adjust: exact;
+    visibility: visible;
+  }
+  #admission-section {
+    position: absolute;
+    left: 0;
+    top: 25px;
   }
 }
 

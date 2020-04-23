@@ -59,17 +59,36 @@
       <div class="container-fluid menu-bar">
         <div class="menu-wrap d-flex align-items-center">
           <span class="d-inline-block d-lg-none">
-            <a href="#" class=" site-menu-toggle js-menu-toggle py-5">
+            <a href="#" class="site-menu-toggle js-menu-toggle py-5">
               <span class="icon-menu h3 text-white"></span>
             </a>
           </span>
           <nav class="site-navigation text-left mr-auto d-none d-lg-block" role="navigation">
             <ul class="site-menu main-menu js-clone-nav mr-auto ">
               <li><a href="index.html" class="nav-link">Home</a></li>
-              <li><a href="about.html" class="nav-link">About</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  About
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li class="dropdown-item"><a href="about.html" class="nav-link">People</a></li>
+                  <li class="dropdown-item"><a href="about.html" class="nav-link">Approach</a></li>
+                  <li class="dropdown-item"><a href="about.html" class="nav-link">Extra Curricular Activities</a></li>
+                  <li class="dropdown-item"><a href="about.html" class="nav-link">Children's Wing</a></li>
+                </ul>
+              </li>
               <li><a href="gallery.html" class="nav-link">Gallery</a></li>
-              <li class="active"><a href="enquiry.html" class="nav-link">Enquiry</a></li>
-              <li><a href="admission.html" class="nav-link">Admission</a></li>
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Admission
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a href="admission.html" class="nav-link">Admission - Pre KG to Grade V</a></li>
+                  <li><a href="enquiry.html" class="nav-link">Enquiry</a></li>
+                </ul>
+              </li>
             </ul>
           </nav>
 

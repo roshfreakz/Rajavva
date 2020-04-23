@@ -1,3 +1,7 @@
+a {
+  cursor: pointer;
+}
+
 body {
   background-color: #f6f5f5;
 }
@@ -16,6 +20,35 @@ body {
   position: absolute;
   top: 5px;
   left: 0;
+}
+
+.site-navigation li:hover>ul.dropdown-menu {
+  display: block;
+}
+
+ul.dropdown-menu,
+li.dropdown-item {
+  margin: 0;
+  background-color: #fff;
+  padding: 0;
+}
+
+ul.dropdown-menu li {
+  width: 300px;
+}
+
+li a.nav-link {
+  width: 100%;
+  color: #333;
+}
+
+li a.nav-link:hover {
+  color: #fd4d40;
+}
+
+.dropdown-item:hover {
+  color: #333;
+  background-color: #fff;
 }
 
 .site-info {
@@ -132,8 +165,14 @@ body {
   background: url("../images/kids_4.jpg") no-repeat top center/cover;
 }
 
-.home-section .container {
+/* .home-section .container {
   margin-top: 30vh;
+} */
+
+.aboutus-col{
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .home-section .container h1 {
@@ -149,6 +188,10 @@ body {
   overflow: hidden;
 }
 
+img {
+  width: 100%;
+}
+
 .img {
   width: 100%;
   transition: all ease 1s;
@@ -158,17 +201,54 @@ body {
   transform: scale(1.5);
 }
 
-/* .gallery-section .tab-content{
- max-height: 600px;
- overflow-y: auto;
- overflow-x: hidden;
-} */
-
-/* .gallery .card {
-  min-height: 250px;
-} */
+.profile-pic img {
+  height: 300px;
+}
 
 
+.sign-pic img {
+  height: 100px;
+}
+
+.profile-pic img,
+.sign-pic img {
+  border: 3px solid black;
+  padding: 20px;
+}
+
+.profile-pic:hover .edit,
+.sign-pic:hover .edit {
+  display: block;
+}
+
+.edit {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  display: none;
+}
+
+
+.edit a {
+  color: white !important;
+  background-color: red;
+  border-radius: 50%;
+  display: block;
+  padding-top: 4px;
+  width: 25px;
+  text-align: center;
+  height: 25px;
+}
+
+.admission-section .card-body.signature-img {
+  margin: 0;
+  /* width: 200px;
+  height: 100px; */
+}
+
+.admission-section .card-body.signature-img img {
+  width: 100px;
+}
 
 .print-logo {
   width: 200px;
@@ -177,6 +257,10 @@ body {
 .admission-section .card-body.card-photo-block {
   /* margin-left: 250px; */
   height: 250px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .admission-section .card-body {
@@ -184,7 +268,7 @@ body {
   margin: 15px;
 }
 
-.admission-section h5{
+.admission-section h5 {
   margin: 30px 0;
   color: #000;
 }
@@ -336,10 +420,12 @@ form.admission-section .row .col-12.inner-form {
   body * {
     visibility: hidden;
   }
+
   #admission-section * {
     -webkit-print-color-adjust: exact;
     visibility: visible;
   }
+
   #admission-section {
     position: absolute;
     left: 0;

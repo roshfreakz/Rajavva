@@ -349,3 +349,65 @@ jQuery(document).ready(function ($) {
 
 
 });
+
+//ProfilePic
+function UploadPhoto() {
+	$('#photo-upload').click();
+
+}
+
+function RemoveProfilePic() {
+	$("#photo-upload").val('');
+	$('#card-photo-show').hide();
+	$('#card-photo-add').show();
+}
+
+
+function readURL(input) {
+	if (input.files && input.files[0]) {
+		var reader = new FileReader();
+
+		reader.onload = function (e) {
+			$('#card-photo-show img').attr('src', e.target.result);
+		}
+
+		reader.readAsDataURL(input.files[0]); // convert to base64 string
+		$('#card-photo-add').hide();
+		$('#card-photo-show').show();
+	}
+}
+
+$("#photo-upload").change(function () {
+	readURL(this);
+});
+
+//Signature
+function UploadSign() {
+	$('#sign-upload').click();
+
+}
+
+function RemoveSignPic() {
+	$("#sign-upload").val('');
+	$('#card-sign-show').hide();
+	$('#card-sign-add').show();
+}
+
+
+function readsignURL(input) {
+	if (input.files && input.files[0]) {
+		var reader = new FileReader();
+
+		reader.onload = function (e) {
+			$('#card-sign-show img').attr('src', e.target.result);
+		}
+
+		reader.readAsDataURL(input.files[0]); // convert to base64 string
+		$('#card-sign-add').hide();
+		$('#card-sign-show').show();
+	}
+}
+
+$("#sign-upload").change(function () {
+	readsignURL(this);
+});

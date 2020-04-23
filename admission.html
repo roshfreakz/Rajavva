@@ -59,17 +59,36 @@
       <div class="container-fluid menu-bar">
         <div class="menu-wrap d-flex align-items-center">
           <span class="d-inline-block d-lg-none">
-            <a href="#" class=" site-menu-toggle js-menu-toggle py-5">
+            <a href="#" class="site-menu-toggle js-menu-toggle py-5">
               <span class="icon-menu h3 text-white"></span>
             </a>
           </span>
           <nav class="site-navigation text-left mr-auto d-none d-lg-block" role="navigation">
             <ul class="site-menu main-menu js-clone-nav mr-auto ">
               <li><a href="index.html" class="nav-link">Home</a></li>
-              <li><a href="about.html" class="nav-link">About</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  About
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li class="dropdown-item"><a href="about.html" class="nav-link">People</a></li>
+                  <li class="dropdown-item"><a href="about.html" class="nav-link">Approach</a></li>
+                  <li class="dropdown-item"><a href="about.html" class="nav-link">Extra Curricular Activities</a></li>
+                  <li class="dropdown-item"><a href="about.html" class="nav-link">Children's Wing</a></li>
+                </ul>
+              </li>
               <li><a href="gallery.html" class="nav-link">Gallery</a></li>
-              <li><a href="enquiry.html" class="nav-link">Enquiry</a></li>
-              <li class="active"><a href="admission.html" class="nav-link">Admission</a></li>
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Admission
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a href="admission.html" class="nav-link">Admission - Pre KG to Grade V</a></li>
+                  <li><a href="enquiry.html" class="nav-link">Enquiry</a></li>
+                </ul>
+              </li>
             </ul>
           </nav>
 
@@ -81,8 +100,6 @@
         </div>
       </div>
     </header>
-
-    
 
     <div class="container-fluid mt-2">
       <div class="row">
@@ -113,7 +130,17 @@
                   Phone No : 9444808529, 7904971964</p>
               </div>
               <div class="col-md-3 col-12 text-right">
-                <div class="card-body card-photo-block">
+                <div class="card-body card-photo-block" id="card-photo-add">
+                  <h4><i class="icon-user"></i> Photo</h4>
+                  <button class="btn btn-warning btn-custom-1 px-2 py-2 btn-block" onclick="UploadPhoto()"><i
+                      class="icon-upload"></i> Upload Photo</button>
+                  <input type="file" id="photo-upload" name="photo-upload" accept="image/*" style="display: none;">
+                </div>
+                <div class="profile-pic" id="card-photo-show" style="display: none;">
+                  <img src="" alt="">
+                  <div class="edit">
+                    <a onclick="RemoveProfilePic()"><i class="icon-times"></i></a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -133,7 +160,7 @@
               </div>
             </div>
             <hr>
-         
+
             <h5>STUDENT INFORMATION</h5>
             <div>
               <div class="row form-group">
@@ -322,8 +349,114 @@
             <h5>PARENT / GUARDIAN INFORMATION</h5>
             <div>
               <div class="row form-group">
+                <div class="col-md-3 col-12">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="CheckParents">
+                    <label class="custom-control-label" for="CheckParents">Both Parents</label>
+                  </div>
+                </div>
+                <div class="col-md-3 col-12">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="CheckFather">
+                    <label class="custom-control-label" for="CheckFather">Father</label>
+                  </div>
+                </div>
+                <div class="col-md-3 col-12">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="CheckMother">
+                    <label class="custom-control-label" for="CheckMother">Mother</label>
+                  </div>
+                </div>
+                <div class="col-md-3 col-12">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="CheckGaurdian">
+                    <label class="custom-control-label" for="CheckGaurdian">Gaurdian</label>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+            <div>
+              <div class="row form-group">
                 <div class="col-md-2 col-12">
-                  <label for="DoorNo">Name</label>
+                  <label for="DoorNo">Father's Name</label>
+                </div>
+                <div class="col-md-4 col-12">
+                  <input type="text" class="form-control" id="DoorNo" name="DoorNo">
+                </div>
+                <div class="col-md-2 col-12 inner-form">
+                  <label for="Street">Educational Qualification</label>
+                </div>
+                <div class="col-md-4 col-12">
+                  <input type="text" class="form-control" id="Street" name="Street">
+                </div>
+              </div>
+              <div class="row form-group">
+                <div class="col-md-2 col-12">
+                  <label for="DoorNo">Occupation</label>
+                </div>
+                <div class="col-md-4 col-12">
+                  <input type="text" class="form-control" id="DoorNo" name="DoorNo">
+                </div>
+                <div class="col-md-2 col-12 inner-form">
+                  <label for="Street">Contact Number</label>
+                </div>
+                <div class="col-md-4 col-12">
+                  <input type="text" class="form-control" id="Street" name="Street">
+                </div>
+              </div>
+              <div class="row form-group">
+                <div class="col-md-2 col-12">
+                  <label for="DoorNo">Email ID</label>
+                </div>
+                <div class="col-md-4 col-12">
+                  <input type="text" class="form-control" id="DoorNo" name="DoorNo">
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="row form-group">
+                <div class="col-md-2 col-12">
+                  <label for="DoorNo">Mother's Name</label>
+                </div>
+                <div class="col-md-4 col-12">
+                  <input type="text" class="form-control" id="DoorNo" name="DoorNo">
+                </div>
+                <div class="col-md-2 col-12 inner-form">
+                  <label for="Street">Educational Qualification</label>
+                </div>
+                <div class="col-md-4 col-12">
+                  <input type="text" class="form-control" id="Street" name="Street">
+                </div>
+              </div>
+              <div class="row form-group">
+                <div class="col-md-2 col-12">
+                  <label for="DoorNo">Occupation</label>
+                </div>
+                <div class="col-md-4 col-12">
+                  <input type="text" class="form-control" id="DoorNo" name="DoorNo">
+                </div>
+                <div class="col-md-2 col-12 inner-form">
+                  <label for="Street">Contact Number</label>
+                </div>
+                <div class="col-md-4 col-12">
+                  <input type="text" class="form-control" id="Street" name="Street">
+                </div>
+              </div>
+              <div class="row form-group">
+                <div class="col-md-2 col-12">
+                  <label for="DoorNo">Email ID</label>
+                </div>
+                <div class="col-md-4 col-12">
+                  <input type="text" class="form-control" id="DoorNo" name="DoorNo">
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="row form-group">
+                <div class="col-md-2 col-12">
+                  <label for="DoorNo">Gaurdian's Name</label>
                 </div>
                 <div class="col-md-4 col-12">
                   <input type="text" class="form-control" id="DoorNo" name="DoorNo">
@@ -424,16 +557,31 @@
                 fee
                 structure of the school</p>
               <br>
-              <br>
+              <div class="row form-group">
+                <div class="col-9"></div>
+                <div class="col-3 text-right">
+                  <div id="card-sign-add">
+                    <button class="btn btn-warning btn-custom-1 py-2 px-4" onclick="UploadSign()">Upload Signature</button>
+                    <input type="file" name="sign-upload" id="sign-upload" style="display: none;">
+                  </div>
+                  <div class="sign-pic" id="card-sign-show" style="display: none;">
+                    <img src="" alt="">
+                    <div class="edit">
+                      <a onclick="RemoveSignPic()"><i class="icon-times"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="row form-group">
                 <div class="col-md-6 col-12">
                   <label for="BDate">Date:
                     <script> document.write(new Date().toLocaleDateString()); </script></label>
                 </div>
-                <div class="col-md-6 col-12 d-flex justify-content-end inner-form">
-                  <label for="Signature">Signature of the Parent/Guardian</label>
+                <div class="col-md-6 col-12 text-right">
+                  <p for="Signature">Signature of the Parent/Guardian</p>
                 </div>
               </div>
+
             </div>
             <hr>
             <h5 class="text-center">For the Rajavva Academy office use only</h5>
@@ -583,7 +731,7 @@
   <script src="js/jquery-3.4.1.min.js"></script>
   <script>
     //Smooth Scrolling
-    $('.btn').on('click', function (event) {
+    $('#gototop').on('click', function (event) {
       if (this.hash !== '') {
         event.preventDefault();
         const hash = this.hash;

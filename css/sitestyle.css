@@ -399,6 +399,32 @@ form.admission-section .row .col-12.inner-form {
   background-color: #fd4d40;
 }
 
+.curriculam{
+  list-style: none;
+  text-align: left;
+  padding: 10px;
+}
+
+.curriculam li{
+  display: flex;
+  flex-direction: row;
+  /* align-items:center; */
+}
+
+.curriculam li i{
+  font-size: 30px;
+  flex: 1;
+}
+
+.curriculam li .text{
+  margin-left:20px;
+  flex:11;
+}
+
+.post-entry-1-contents {
+  border-radius: 1rem;
+}
+
 @media (max-width: 991.98px) {
   .img-logo img {
     left: 30%;

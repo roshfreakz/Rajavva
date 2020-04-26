@@ -170,30 +170,24 @@ li a.nav-link:hover {
 } */
 
 .aboutus-col {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.aboutus-col p {
-  font-size: 18px;
   text-align: justify;
+
 }
 
-.early-childhood{
+.early-childhood {
   padding: 40px;
 }
 
-.child-care{
-  background-image: url("../images/kids_6.jpg");
-  padding: 4em 0;
+
+.child-care {
+  background-image: url("../images/kids_8.jpg");
+  padding: 0;
   width: 100%;
   height: 100%;
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top left;
+  background-position: center;
 }
 
 .child-care .overlay {
@@ -203,13 +197,21 @@ li a.nav-link:hover {
   right: 0;
   bottom: 0;
   content: '';
-  opacity: .3;
+  opacity: .5;
   background: #000000;
 }
 
-.childhood{
-  height: 60vh;
-  margin-left: 100px;
+.childhood {
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  align-items: center;
+  justify-content: space-around;
+  background: rgba(12, 247, 214, 0.8);
+ 
+ }
+ .childhood h4{
+  color:#fff;
 }
 
 .home-section .container h1 {
@@ -380,45 +382,45 @@ form.admission-section .row .col-12.inner-form {
   height: 2rem;
 }
 
-.people-content{
+.people-content {
   color: #fff;
   margin-top: 50px;
   padding: 0 50px;
 }
 
-.people-content h2{
- color: #fff;
+.people-content h2 {
+  color: #fff;
 }
 
-.people-content p{
+.people-content p {
   margin-top: 30px;
- text-align: justify;
+  text-align: justify;
 }
 
-.bg-red{
+.bg-red {
   background-color: #fd4d40;
 }
 
-.curriculam{
+.curriculam {
   list-style: none;
   text-align: left;
   padding: 10px;
 }
 
-.curriculam li{
+.curriculam li {
   display: flex;
   flex-direction: row;
   /* align-items:center; */
 }
 
-.curriculam li i{
+.curriculam li i {
   font-size: 30px;
   flex: 1;
 }
 
-.curriculam li .text{
-  margin-left:20px;
-  flex:11;
+.curriculam li .text {
+  margin-left: 20px;
+  flex: 11;
 }
 
 .post-entry-1-contents {
@@ -497,8 +499,8 @@ form.admission-section .row .col-12.inner-form {
     padding-top: 10px;
   }
 
-  .childhood{
-    margin:0;
+  .childhood {
+    margin: 0;
   }
 }
 

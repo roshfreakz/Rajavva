@@ -427,6 +427,10 @@ form.admission-section .row .col-12.inner-form {
   border-radius: 1rem;
 }
 
+.kidz-img{
+  height:180px;
+}
+
 @media (max-width: 991.98px) {
   .img-logo img {
     left: 30%;
